@@ -2,12 +2,6 @@
 #Author @Alper deCarion
 #spellcheck v-1.0.3
 
-# First model built upon BERT MLM, using a masked token to find likely candidates for the mispelled word
-
-#      Second model iterated through the dictionary of valid english words and checked if edit distance < 3 
-#  and added it to a dictionary where the least edited candidates were taken and evaluated for their respective probabilities of being the word in question
-#  This was obviously slow and inefficient.
-
 # This model instead builds off of Peter Norvig's as his idea to generate all possible strings 1 and 2 edit distances away AND THEN seeing if it is a known word is quite more efficient
 # We will be adding two things: further edit distances, and computing the jaro_winkler_similarity as a final evaluation metric. (Levenshtein distances(1,2) -> P(word) -> Jaro-Winkler)
 # 
