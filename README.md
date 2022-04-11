@@ -5,8 +5,7 @@ Those who spell correctly are awarded points. Those who spell incorrectly are pu
 ## details
 **A discord bot**
 
-Grammarbot uses the spellcheck module I built: https://github.com/Alperdec/SpellChecker
-to check and correct user's chats. In addition to this it is connected to a RESTful API built using **express** and **javascript** and stores points on **firestore**. 
+Grammarbot uses the spellcheck module I built to check and correct user's chats. In addition to this it is connected to a RESTful API built using **express** and **javascript** and stores points on **firestore**. 
 The source code for this can be found in **/grammarbot/grammarbot-backend/functions/index.js**
 
 The pointsystem module can be found in **util.py**
